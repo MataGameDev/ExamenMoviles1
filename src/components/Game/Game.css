@@ -1,7 +1,65 @@
-.Game
-{
-    display:flex;
-    flex-direction:column;
-    align-items:center;
+.Game {
+    display: flex;
+    background-color: #f3ece4;
+    flex-direction: column;
+    margin-top: 32px;
+    margin-bottom:32px;
+    margin-left: 256px;
+    margin-right: 256px;
+    align-items: center;
+    color: #eddbcd;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bold;
+    background-image: url(https://media.istockphoto.com/photos/staff-working-behind-counter-in-busy-coffee-shop-picture-id900816038?k=20&m=900816038&s=612x612&w=0&h=PYTP1QdLaw2YuvrKZVe8nGgek6wa0CmYN4bRqjhYr8E=);
+}
+.Game input {
+    background-color: #d88b79;
+    border-radius: 8px;
+    color: #a71f13;
+    text-align: center;
+    width: 120px;
+    height: 120px;
+    font-size: 90px;
+}
+
+.Game button {
+    background-color: #a7382d;
+    border: none;
+    color: #eddbcd;
+    padding: 16px 32px; 
+    padding: 16px 24px; 
+    font-size: 20px;
+    font-weight: bold;
     margin: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    width: 120px; 
+    width: 140px; 
+    
+}
+
+.Game h2 {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0;
+    color: #eddbcd;
+}
+/* Animación de parpadeo */
+.flickering {
+    animation-name: flicker;
+    animation-duration: .3s;
+    animation-timing-function: linear;
+    animation-iteration-count: 0s;
+  
+    -webkit-animation-name:flicker;
+    -webkit-animation-duration: .3s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: 3;
+  }
+
+  @keyframes flicker {  
+    0% { opacity: 1.0; }
+     50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
 }
