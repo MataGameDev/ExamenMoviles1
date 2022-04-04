@@ -1,16 +1,17 @@
 {
-  "main.css": "/static/css/main.1609b81b.chunk.css",
-  "main.js": "/static/js/main.c8c0c545.chunk.js",
-  "main.js.map": "/static/js/main.c8c0c545.chunk.js.map",
+  "main.css": "/static/css/main.fbafc80f.chunk.css",
+  "main.js": "/static/js/main.7aa98129.chunk.js",
+  "main.js.map": "/static/js/main.7aa98129.chunk.js.map",
   "static/js/1.97af9aab.chunk.js": "/static/js/1.97af9aab.chunk.js",
   "static/js/1.97af9aab.chunk.js.map": "/static/js/1.97af9aab.chunk.js.map",
   "static/js/2.5cd0493e.chunk.js": "/static/js/2.5cd0493e.chunk.js",
   "static/js/2.5cd0493e.chunk.js.map": "/static/js/2.5cd0493e.chunk.js.map",
   "runtime~main.js": "/static/js/runtime~main.7ee0e2da.js",
   "runtime~main.js.map": "/static/js/runtime~main.7ee0e2da.js.map",
-  "static/media/logo.svg": "/static/media/logo.06e73328.svg",
-  "static/css/main.1609b81b.chunk.css.map": "/static/css/main.1609b81b.chunk.css.map",
+  "static/media/Cafe.png": "/static/media/Cafe.73ab7595.png",
+  "static/media/Game.css": "/static/media/ctockcafe.11c6901c.jpg",
+  "static/css/main.fbafc80f.chunk.css.map": "/static/css/main.fbafc80f.chunk.css.map",
   "index.html": "/index.html",
-  "precache-manifest.1f5302274b8e43f9fe4ea5ae35704c9b.js": "/precache-manifest.1f5302274b8e43f9fe4ea5ae35704c9b.js",
+  "precache-manifest.32c47255c3c237374bb9847cf2344320.js": "/precache-manifest.32c47255c3c237374bb9847cf2344320.js",
   "service-worker.js": "/service-worker.js"
 }

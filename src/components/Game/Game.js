@@ -9,44 +9,28 @@ class Game extends Component {
             message: "",
             random: generateRandomNumber(100)
         }
-
-        
     }
-
     handleOnChange = e => {
-        //const value = e.target.value
         const {target: {value}} = e;
-
         console.log(value);
-
-        //Evito que la página se recargue presionando enter
         if(e.keyCode === 13) {
             e.preventDefault();
         }
-
         if(value.trim() > 0) {
             this.setState({
                 number: value
             });
         }
-       
-        /* Message vuelve a su estado inicial para dejar
-         de mostrar el mensaje en pantalla al meter un nuevo */ 
          this.setState({
             message: "",
         });
     }
-
     handleOnClick = () => {
         const number = parseInt(this.state.number);
+        console.log(number);
         const random = parseInt(this.state.random);
         const text = calculateText(number, random);
         console.log(random);
-
-        /* Determina que si el número es diferente de random devuelve
-        number a su estado inicial 
-        de otro modo cuando ganas quiero que el número 
-        no vuelva a su estado inicial para que en el input se muestre el número con el que ganaste*/
         if (number !== random){
             this.setState({
                 number: "",
@@ -56,11 +40,9 @@ class Game extends Component {
             this.setState({
                 message: text,
             });
-        }
-        
+        }  
     }
     render() {
-        
         return (
             <div className="Game">
                 <p>Adivina el número que estoy pensando entre el 1 - 100</p>
@@ -69,19 +51,16 @@ class Game extends Component {
                     value = {this.state.number}
                     onChange = {this.handleOnChange}
                 />
-                <button onClick={this.handleOnClick}>Probar</button>
+                <button onClick={this.handleOnClick}>Intentar Suerte</button>
                 <h2 className={(this.state.message)&& 'flickering'}>{this.state.message}</h2>
             </div>
         );
     }
 }
-
 export default Game;
-
 function generateRandomNumber(max, min=1) {
     return Math.floor(Math.random()*(max - min) + min);
 }
-
 function calculateText(number, random) {
     const soClose = 5;
     const diff = Math.abs(random - number);
@@ -97,7 +76,6 @@ function calculateText(number, random) {
         } else {
             return "Estás muy cerca!! tu número es un poco alto."
         }
-
     } else {
         if (number < random) {
             return "Tu número es muy bajo!"
